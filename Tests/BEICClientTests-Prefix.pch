@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'BEICClientTests' target in the 'BEICClientTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
