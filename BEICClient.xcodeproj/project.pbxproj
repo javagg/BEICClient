@@ -62,6 +62,9 @@
 		FA5651BA13D9B58100C1A960 /* ArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5651B913D9B58100C1A960 /* ArticleViewController.m */; };
 		FA5651BC13D9B5B000C1A960 /* ArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5651BB13D9B5B000C1A960 /* ArticleViewController.xib */; };
 		FA5651BE13D9B8BF00C1A960 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5651BD13D9B8BF00C1A960 /* download.png */; };
+		FA565DC813DAA38B00C1A960 /* PhotoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FA565DC313DAA38A00C1A960 /* PhotoSource.m */; };
+		FA565DC913DAA38B00C1A960 /* PhotoTest1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = FA565DC513DAA38A00C1A960 /* PhotoTest1Controller.m */; };
+		FA565DCA13DAA38B00C1A960 /* ThumbsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA565DC713DAA38B00C1A960 /* ThumbsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -277,6 +280,12 @@
 		FA5651BD13D9B8BF00C1A960 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
 		FA565C4613DA981200C1A960 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		FA565C4713DA998A00C1A960 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		FA565DC213DAA38A00C1A960 /* PhotoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoSource.h; sourceTree = "<group>"; };
+		FA565DC313DAA38A00C1A960 /* PhotoSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoSource.m; sourceTree = "<group>"; };
+		FA565DC413DAA38A00C1A960 /* PhotoTest1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTest1Controller.h; sourceTree = "<group>"; };
+		FA565DC513DAA38A00C1A960 /* PhotoTest1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTest1Controller.m; sourceTree = "<group>"; };
+		FA565DC613DAA38A00C1A960 /* ThumbsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbsViewController.h; sourceTree = "<group>"; };
+		FA565DC713DAA38B00C1A960 /* ThumbsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -429,6 +438,12 @@
 		FA56509F13D98CC700C1A960 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FA565DC213DAA38A00C1A960 /* PhotoSource.h */,
+				FA565DC313DAA38A00C1A960 /* PhotoSource.m */,
+				FA565DC413DAA38A00C1A960 /* PhotoTest1Controller.h */,
+				FA565DC513DAA38A00C1A960 /* PhotoTest1Controller.m */,
+				FA565DC613DAA38A00C1A960 /* ThumbsViewController.h */,
+				FA565DC713DAA38B00C1A960 /* ThumbsViewController.m */,
 				FA5650A013D98CC700C1A960 /* BEICClientAppDelegate.h */,
 				FA5650A113D98CC700C1A960 /* BEICClientAppDelegate.m */,
 				FA5650A213D98CC700C1A960 /* FirstViewController.h */,
@@ -865,6 +880,9 @@
 				FA56512813D98D8C00C1A960 /* Reachability.m in Sources */,
 				FA56512E13D98E1900C1A960 /* main.m in Sources */,
 				FA5651BA13D9B58100C1A960 /* ArticleViewController.m in Sources */,
+				FA565DC813DAA38B00C1A960 /* PhotoSource.m in Sources */,
+				FA565DC913DAA38B00C1A960 /* PhotoTest1Controller.m in Sources */,
+				FA565DCA13DAA38B00C1A960 /* ThumbsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

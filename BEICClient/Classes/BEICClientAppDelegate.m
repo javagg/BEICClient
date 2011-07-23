@@ -10,6 +10,8 @@
 #import "FirstViewController.h"
 #import "SecondViewController.h"
 #import "ArticleViewController.h"
+#import "PhotoTest1Controller.h"
+
 
 @implementation BEICClientAppDelegate
 
@@ -22,10 +24,16 @@
     self.tabBarController = [[UITabBarController alloc] init];
     FirstViewController *vc1 = [[FirstViewController alloc] initWithNibName:nil bundle:nil];
     SecondViewController *vc2 = [[SecondViewController alloc] initWithNibName:nil bundle:nil];
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:vc2]; 
+    [vc2 release];
     
     ArticleViewController *avc = [[ArticleViewController alloc] initWithNibName:@"ArticleViewController" bundle:nil];
 
-    NSArray* controllers = [NSArray arrayWithObjects:vc1, vc2, avc, nil];
+    NSArray* controllers = [NSArray arrayWithObjects:vc1, nc, avc, nil];
+    [vc1 release];
+    [nc release];
+    [avc release];
+    
     tabBarController.viewControllers = controllers;
     window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [window addSubview:tabBarController.view];
