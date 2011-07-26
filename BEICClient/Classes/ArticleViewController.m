@@ -14,13 +14,13 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self != nil) {
-        self.title = @"My View Controller";
-//        UIImage *image = [UIImage imageNamed:@"home.png"];
-//        UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:@"主页" image:image tag:0];
-//        self.tabBarItem = item;
-//        [item release];   
+        self.title = @"My View Controller";   
     }
     return self;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    return YES;
 }
 
 @end

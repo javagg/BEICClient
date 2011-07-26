@@ -11,7 +11,7 @@
 #import "SecondViewController.h"
 #import "ArticleViewController.h"
 #import "PhotoTest1Controller.h"
-
+#import "WebBrowserController.h"
 
 @implementation BEICClientAppDelegate
 
@@ -26,13 +26,15 @@
     SecondViewController *vc2 = [[SecondViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:vc2]; 
     [vc2 release];
-    
+
+    WebBrowserController *wc = [[WebBrowserController alloc] initWithNibName:nil bundle:nil];
     ArticleViewController *avc = [[ArticleViewController alloc] initWithNibName:@"ArticleViewController" bundle:nil];
 
-    NSArray* controllers = [NSArray arrayWithObjects:vc1, nc, avc, nil];
+    NSArray* controllers = [NSArray arrayWithObjects:vc1, nc, avc, wc, nil];
     [vc1 release];
     [nc release];
     [avc release];
+    [wc release];
     
     tabBarController.viewControllers = controllers;
     window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

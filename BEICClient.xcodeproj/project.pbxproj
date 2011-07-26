@@ -65,6 +65,8 @@
 		FA565DC813DAA38B00C1A960 /* PhotoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FA565DC313DAA38A00C1A960 /* PhotoSource.m */; };
 		FA565DC913DAA38B00C1A960 /* PhotoTest1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = FA565DC513DAA38A00C1A960 /* PhotoTest1Controller.m */; };
 		FA565DCA13DAA38B00C1A960 /* ThumbsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA565DC713DAA38B00C1A960 /* ThumbsViewController.m */; };
+		FAC83D4113DEAE0F004BEA77 /* website.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC83D4013DEAE0F004BEA77 /* website.png */; };
+		FAC83D4413DEB13B004BEA77 /* WebBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC83D4313DEB13B004BEA77 /* WebBrowserController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -286,6 +288,9 @@
 		FA565DC513DAA38A00C1A960 /* PhotoTest1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTest1Controller.m; sourceTree = "<group>"; };
 		FA565DC613DAA38A00C1A960 /* ThumbsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbsViewController.h; sourceTree = "<group>"; };
 		FA565DC713DAA38B00C1A960 /* ThumbsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbsViewController.m; sourceTree = "<group>"; };
+		FAC83D4013DEAE0F004BEA77 /* website.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = website.png; sourceTree = "<group>"; };
+		FAC83D4213DEB13B004BEA77 /* WebBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebBrowserController.h; sourceTree = "<group>"; };
+		FAC83D4313DEB13B004BEA77 /* WebBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebBrowserController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -452,6 +457,8 @@
 				FA5650A513D98CC700C1A960 /* SecondViewController.m */,
 				FA5651B813D9B58100C1A960 /* ArticleViewController.h */,
 				FA5651B913D9B58100C1A960 /* ArticleViewController.m */,
+				FAC83D4213DEB13B004BEA77 /* WebBrowserController.h */,
+				FAC83D4313DEB13B004BEA77 /* WebBrowserController.m */,
 			);
 			name = Classes;
 			path = BEICClient/Classes;
@@ -482,6 +489,7 @@
 		FA5650A813D98CC700C1A960 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FAC83D4013DEAE0F004BEA77 /* website.png */,
 				FA56514213D9A5F600C1A960 /* large_text_size.png */,
 				FA56514313D9A5F600C1A960 /* small_text_size.png */,
 				FA56514013D9A29C00C1A960 /* picture.png */,
@@ -819,6 +827,7 @@
 				FA56514513D9A5F600C1A960 /* small_text_size.png in Resources */,
 				FA5651BC13D9B5B000C1A960 /* ArticleViewController.xib in Resources */,
 				FA5651BE13D9B8BF00C1A960 /* download.png in Resources */,
+				FAC83D4113DEAE0F004BEA77 /* website.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -883,6 +892,7 @@
 				FA565DC813DAA38B00C1A960 /* PhotoSource.m in Sources */,
 				FA565DC913DAA38B00C1A960 /* PhotoTest1Controller.m in Sources */,
 				FA565DCA13DAA38B00C1A960 /* ThumbsViewController.m in Sources */,
+				FAC83D4413DEB13B004BEA77 /* WebBrowserController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
