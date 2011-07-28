@@ -10,7 +10,8 @@
 
 
 @interface ArticleViewController : UIViewController {
-    
+    NSUInteger textFontSize;
 }
 
+@property (nonatomic, retain) IBOutlet UIWebView *webView;
 @end
