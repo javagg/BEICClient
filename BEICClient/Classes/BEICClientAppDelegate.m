@@ -21,6 +21,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+    } else {
+    }
+    
+    NSManagedObjectContext *context = [self managedObjectContext];  
+    if (context == nil) {
+    }  
+    
     self.tabBarController = [[UITabBarController alloc] init];
     FirstViewController *vc1 = [[FirstViewController alloc] initWithNibName:nil bundle:nil];
     SecondViewController *vc2 = [[SecondViewController alloc] initWithNibName:nil bundle:nil];
@@ -75,31 +83,61 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    /*
-     Called when the application is about to terminate.
-     Save data if appropriate.
-     See also applicationDidEnterBackground:.
-     */
+    NSError *error = nil; 
+    if (managedObjectContext != nil) {  
+        if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {  
+            // Handle the error.  
+        }  
+    }  
 }
 
 - (void)dealloc {
+    [managedObjectContext release];  
+    [managedObjectModel release];  
+    [persistentStoreCoordinator release];  
+    
     self.tabBarController = nil;
     self.window = nil;
+    
     [super dealloc];
 }
 
-/*
-// Optional UITabBarControllerDelegate method.
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
-{
-}
-*/
+- (NSManagedObjectContext *)managedObjectContext {  
+    if (managedObjectContext != nil) {  
+        return managedObjectContext;
+    }
+    
+    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];  
+    if (coordinator != nil) {  
+        managedObjectContext = [[NSManagedObjectContext alloc] init];  
+        [managedObjectContext setPersistentStoreCoordinator: coordinator];  
+    }  
+    return managedObjectContext;  
+}  
 
-/*
-// Optional UITabBarControllerDelegate method.
-- (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
-{
-}
-*/
+- (NSManagedObjectModel *)managedObjectModel {  
+    if (managedObjectModel != nil) {
+        return managedObjectModel;
+    }
+    managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];  
+    return managedObjectModel;  
+}  
+ 
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {  
+    if (persistentStoreCoordinator != nil) {
+        return persistentStoreCoordinator;
+    }
+    
+    NSURL *storeUrl = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent: @"Locations.sqlite"]];  
+    
+    NSError *error = nil;  
+    persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];
+    
+    if (![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil  
+          URL:storeUrl options:nil error:&error]) {
+    }      
+    
+    return persistentStoreCoordinator;  
+}  
 
 @end

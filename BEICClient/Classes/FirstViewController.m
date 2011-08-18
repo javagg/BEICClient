@@ -16,9 +16,14 @@
     if (self != nil) {
         self.title = @"My View Controller";
         UIImage *image = [UIImage imageNamed:@"home.png"];
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 100.0f, 40.0f)];
+        [imageView setImage:[UIImage imageNamed:@"logo.png"]];
+        self.navigationItem.titleView = imageView;
+        [imageView release];
+        
         UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:@"主页" image:image tag:0];
         self.tabBarItem = item;
-        [item release];   
+        [item release];
     }
     return self;
 }
