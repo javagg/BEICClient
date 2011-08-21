@@ -16,6 +16,7 @@
 		320CC833B8AF0ACFD35E6225 /* libThree20Style.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320CC833B8AF0ACFD35E6224 /* libThree20Style.a */; };
 		320D7DCCE32703ACAB9A45E5 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320D7DCCE32703ACAB9A45E4 /* libThree20.a */; };
 		320F2C48872C2E2C4DF86205 /* libThree20UI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320F2C48872C2E2C4DF86204 /* libThree20UI.a */; };
+		FA1B123813FED0190071FDA9 /* Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1B123713FED0190071FDA9 /* Encryption.m */; };
 		FA3692B113E0092700A29481 /* NewsSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3692B013E0092700A29481 /* NewsSectionCell.xib */; };
 		FA3725F613E13055000B7D46 /* HtmlTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA3725F513E13055000B7D46 /* HtmlTemplate.txt */; };
 		FA3DAA6813F7AC950057BCEA /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3DAA6713F7AC950057BCEA /* logo.png */; };
@@ -339,6 +340,8 @@
 		320CC833B8AF0ACFD35E6220 /* Three20Style.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Style.xcodeproj; path = BEICClient/Lib/three20/src/Three20Style/Three20Style.xcodeproj; sourceTree = SOURCE_ROOT; };
 		320D7DCCE32703ACAB9A45E0 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = BEICClient/Lib/three20/src/Three20/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		320F2C48872C2E2C4DF86200 /* Three20UI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20UI.xcodeproj; path = BEICClient/Lib/three20/src/Three20UI/Three20UI.xcodeproj; sourceTree = SOURCE_ROOT; };
+		FA1B123613FED0190071FDA9 /* Encryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Encryption.h; sourceTree = "<group>"; };
+		FA1B123713FED0190071FDA9 /* Encryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Encryption.m; sourceTree = "<group>"; };
 		FA3692B013E0092700A29481 /* NewsSectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsSectionCell.xib; sourceTree = "<group>"; };
 		FA3725F513E13055000B7D46 /* HtmlTemplate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HtmlTemplate.txt; sourceTree = "<group>"; };
 		FA3DAA6713F7AC950057BCEA /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -1032,6 +1035,8 @@
 				FA3DAA6A13F83CCC0057BCEA /* Utils.m */,
 				FA3DAA7013F8FBBE0057BCEA /* Database.h */,
 				FA3DAA7113F8FBBE0057BCEA /* Database.m */,
+				FA1B123613FED0190071FDA9 /* Encryption.h */,
+				FA1B123713FED0190071FDA9 /* Encryption.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1861,6 +1866,7 @@
 				FA8CC82C13F6F5BA00FD5E5E /* UIView+SubviewTraversal.m in Sources */,
 				FA3DAA6B13F83CCC0057BCEA /* Utils.m in Sources */,
 				FA3DAA7213F8FBBE0057BCEA /* Database.m in Sources */,
+				FA1B123813FED0190071FDA9 /* Encryption.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

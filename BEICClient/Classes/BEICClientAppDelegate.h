@@ -10,6 +10,7 @@
 #import <CoreData/CoreData.h>
 
 @interface BEICClientAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
+@private
     NSPersistentStoreCoordinator *persistentStoreCoordinator;
     NSManagedObjectModel *managedObjectModel;
     NSManagedObjectContext *managedObjectContext;

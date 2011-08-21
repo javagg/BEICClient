@@ -9,6 +9,8 @@
 #import <Availability.h>
 #import <Foundation/Foundation.h>
 #import <MobileCoreServices/MobileCoreServices.h>
+#import <AVFoundation/AVFoundation.h>
+
 #import "Utils.h"
 
 BOOL isCameraAvailable() {
@@ -88,6 +90,12 @@ BOOL isFlashAvailableOnFrontCamera() {
     return result;
 }
 
+
+BOOL isAudioInputAvailable() {
+    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+    return audioSession.inputIsAvailable;
+}
+
 BOOL isPhotoLibraryAvailable() {
     return ([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypePhotoLibrary]);
 }
@@ -113,4 +121,12 @@ BOOL isMultitaskingSupported() {
     return result;
 }
 
+NSString *makeUUID() {
+    CFUUIDRef uuidRef = CFUUIDCreate(NULL);
+    CFStringRef uuidStringRef = CFUUIDCreateString(NULL, uuidRef);
+    CFRelease(uuidRef);
+    NSString* uuid = [NSString stringWithString:(NSString *)uuidStringRef];
+    CFRelease(uuidStringRef);
+    return uuid;
+}
 

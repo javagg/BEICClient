@@ -18,3 +18,5 @@ BOOL isFlashAvailableOnRearCamera();
 BOOL isPhotoLibraryAvailable();
 BOOL canUserPickVideosFromPhotoLibrary();
 BOOL canUserPickPhotosFromPhotoLibrary();
+
+NSString *makeUUID();

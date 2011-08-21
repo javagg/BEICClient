@@ -128,8 +128,9 @@
         return persistentStoreCoordinator;
     }
     
-    NSURL *storeUrl = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent: @"Locations.sqlite"]];  
+    NSString *documentDirectoryPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     
+    NSURL *storeUrl = [NSURL fileURLWithPath:[documentDirectoryPath stringByAppendingPathComponent: @"Locations.sqlite"]];
     NSError *error = nil;  
     persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];
     
