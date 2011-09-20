@@ -30,7 +30,7 @@
     }  
     
     self.tabBarController = [[UITabBarController alloc] init];
-    FirstViewController *vc1 = [[FirstViewController alloc] initWithNibName:nil bundle:nil];
+    FirstViewController *vc1 = [[FirstViewController alloc] initWithNibName:@"NewsViewController" bundle:nil];
     SecondViewController *vc2 = [[SecondViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:vc2]; 
     [vc2 release];

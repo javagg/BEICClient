@@ -73,7 +73,11 @@
 		FA565DC913DAA38B00C1A960 /* PhotoTest1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = FA565DC513DAA38A00C1A960 /* PhotoTest1Controller.m */; };
 		FA565DCA13DAA38B00C1A960 /* ThumbsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA565DC713DAA38B00C1A960 /* ThumbsViewController.m */; };
 		FA5EA2CF13EC16C800BD77AC /* MyAVController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5EA2CE13EC16C800BD77AC /* MyAVController.m */; };
+		FA7CF4971421BE2D0062ECF0 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7CF4961421BE2D0062ECF0 /* NewsViewController.xib */; };
+		FA7CF49E1421C2750062ECF0 /* NewsSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7CF49D1421C2750062ECF0 /* NewsSectionCell.m */; };
 		FA8CC82C13F6F5BA00FD5E5E /* UIView+SubviewTraversal.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8CC82B13F6F5BA00FD5E5E /* UIView+SubviewTraversal.m */; };
+		FA9A95A11421DAAF00824EB7 /* NewsThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9A95A01421DAAF00824EB7 /* NewsThumbView.m */; };
+		FA9A95A71421E47F00824EB7 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9A95A61421E47F00824EB7 /* CoreText.framework */; };
 		FAC83D4113DEAE0F004BEA77 /* website.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC83D4013DEAE0F004BEA77 /* website.png */; };
 		FAC83D4413DEB13B004BEA77 /* WebBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC83D4313DEB13B004BEA77 /* WebBrowserController.m */; };
 		FACB844513F63B8E008F275B /* UIApplication+NetworkActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = FACB844413F63B8E008F275B /* UIApplication+NetworkActivity.m */; };
@@ -439,8 +443,15 @@
 		FA565DC713DAA38B00C1A960 /* ThumbsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbsViewController.m; sourceTree = "<group>"; };
 		FA5EA2CD13EC16C800BD77AC /* MyAVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAVController.h; sourceTree = "<group>"; };
 		FA5EA2CE13EC16C800BD77AC /* MyAVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAVController.m; sourceTree = "<group>"; };
+		FA7CF495142098BD0062ECF0 /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		FA7CF4961421BE2D0062ECF0 /* NewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		FA7CF49C1421C2740062ECF0 /* NewsSectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsSectionCell.h; sourceTree = "<group>"; };
+		FA7CF49D1421C2750062ECF0 /* NewsSectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsSectionCell.m; sourceTree = "<group>"; };
 		FA8CC82A13F6F5BA00FD5E5E /* UIView+SubviewTraversal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SubviewTraversal.h"; sourceTree = "<group>"; };
 		FA8CC82B13F6F5BA00FD5E5E /* UIView+SubviewTraversal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SubviewTraversal.m"; sourceTree = "<group>"; };
+		FA9A959F1421DAAF00824EB7 /* NewsThumbView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsThumbView.h; sourceTree = "<group>"; };
+		FA9A95A01421DAAF00824EB7 /* NewsThumbView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsThumbView.m; sourceTree = "<group>"; };
+		FA9A95A61421E47F00824EB7 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		FAC83D4013DEAE0F004BEA77 /* website.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = website.png; sourceTree = "<group>"; };
 		FAC83D4213DEB13B004BEA77 /* WebBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebBrowserController.h; sourceTree = "<group>"; };
 		FAC83D4313DEB13B004BEA77 /* WebBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebBrowserController.m; sourceTree = "<group>"; };
@@ -689,6 +700,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA9A95A71421E47F00824EB7 /* CoreText.framework in Frameworks */,
 				FA3DAA7413F8FC930057BCEA /* libsqlite3.dylib in Frameworks */,
 				FACB844B13F641EB008F275B /* CoreMedia.framework in Frameworks */,
 				FACB844913F641C3008F275B /* CoreVideo.framework in Frameworks */,
@@ -797,7 +809,6 @@
 		FA56505013D98A8800C1A960 = {
 			isa = PBXGroup;
 			children = (
-				FA3DAA7313F8FC930057BCEA /* libsqlite3.dylib */,
 				FA5650A613D98CC700C1A960 /* Lib */,
 				FA56512913D98DBD00C1A960 /* Supporting Files */,
 				FA56509F13D98CC700C1A960 /* Classes */,
@@ -819,6 +830,7 @@
 		FA56505E13D98A8900C1A960 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA9A95A61421E47F00824EB7 /* CoreText.framework */,
 				FACB844A13F641EB008F275B /* CoreMedia.framework */,
 				FACB844813F641C2008F275B /* CoreVideo.framework */,
 				FACB844613F64189008F275B /* AVFoundation.framework */,
@@ -836,6 +848,7 @@
 				FA56513C13D994AE00C1A960 /* MobileCoreServices.framework */,
 				FA56513A13D994A600C1A960 /* SystemConfiguration.framework */,
 				FA56513813D9949800C1A960 /* libz.dylib */,
+				FA3DAA7313F8FC930057BCEA /* libsqlite3.dylib */,
 				FA56513613D9948D00C1A960 /* CFNetwork.framework */,
 				FA56513213D9928100C1A960 /* libxml2.dylib */,
 				FA56505F13D98A8900C1A960 /* UIKit.framework */,
@@ -867,6 +880,10 @@
 				FA5651B913D9B58100C1A960 /* ArticleViewController.m */,
 				FAC83D4213DEB13B004BEA77 /* WebBrowserController.h */,
 				FAC83D4313DEB13B004BEA77 /* WebBrowserController.m */,
+				FA7CF49C1421C2740062ECF0 /* NewsSectionCell.h */,
+				FA7CF49D1421C2750062ECF0 /* NewsSectionCell.m */,
+				FA9A959F1421DAAF00824EB7 /* NewsThumbView.h */,
+				FA9A95A01421DAAF00824EB7 /* NewsThumbView.m */,
 			);
 			name = Classes;
 			path = BEICClient/Classes;
@@ -915,6 +932,7 @@
 			children = (
 				FA5651BB13D9B5B000C1A960 /* ArticleViewController.xib */,
 				FA3692B013E0092700A29481 /* NewsSectionCell.xib */,
+				FA7CF4961421BE2D0062ECF0 /* NewsViewController.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -1037,6 +1055,7 @@
 				FA3DAA7113F8FBBE0057BCEA /* Database.m */,
 				FA1B123613FED0190071FDA9 /* Encryption.h */,
 				FA1B123713FED0190071FDA9 /* Encryption.m */,
+				FA7CF495142098BD0062ECF0 /* Const.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1691,6 +1710,7 @@
 				FA3692B113E0092700A29481 /* NewsSectionCell.xib in Resources */,
 				FA3725F613E13055000B7D46 /* HtmlTemplate.txt in Resources */,
 				FA3DAA6813F7AC950057BCEA /* logo.png in Resources */,
+				FA7CF4971421BE2D0062ECF0 /* NewsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1867,6 +1887,8 @@
 				FA3DAA6B13F83CCC0057BCEA /* Utils.m in Sources */,
 				FA3DAA7213F8FBBE0057BCEA /* Database.m in Sources */,
 				FA1B123813FED0190071FDA9 /* Encryption.m in Sources */,
+				FA7CF49E1421C2750062ECF0 /* NewsSectionCell.m in Sources */,
+				FA9A95A11421DAAF00824EB7 /* NewsThumbView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1892,8 +1914,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
-				CODE_SIGN_IDENTITY = "iphone pwned developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iphone pwned developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -1909,6 +1930,7 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-ObjC";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -1918,8 +1940,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
-				CODE_SIGN_IDENTITY = "iphone pwned developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iphone pwned developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -1933,6 +1954,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-ObjC";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};

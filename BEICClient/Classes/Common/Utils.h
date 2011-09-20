@@ -15,6 +15,8 @@ BOOL isRearCameraAvailable();
 BOOL isFlashAvailableOnFrontCamera();
 BOOL isFlashAvailableOnRearCamera();
 
+BOOL isAudioInputAvailable();
+
 BOOL isPhotoLibraryAvailable();
 BOOL canUserPickVideosFromPhotoLibrary();
 BOOL canUserPickPhotosFromPhotoLibrary();

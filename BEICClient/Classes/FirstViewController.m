@@ -7,7 +7,7 @@
 //
 
 #import "FirstViewController.h"
-
+#import "NewsSectionCell.h"
 
 @implementation FirstViewController
 
@@ -59,6 +59,29 @@
 - (void)dealloc
 {
     [super dealloc];
+}
+
+#pragma mark TableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+	return 256;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellIdentifier = @"Cell";
+    NewsSectionCell *cell = (NewsSectionCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        NSArray *xibs = [[NSBundle mainBundle] loadNibNamed:@"NewsSectionCell" owner:self options:nil];
+        cell = [xibs objectAtIndex:0];
+    }
+    [cell updateMe];
+  
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)atableView numberOfRowsInSection:(NSInteger)section {
+	return 2;
 }
 
 @end
